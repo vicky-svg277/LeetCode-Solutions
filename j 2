@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        // we take the input
+        Scanner sc = new Scanner(System.in);
+        int x = sc.nextInt();
+        int y = sc.nextInt();
+        int z = sc.nextInt();
+
+        // process the input
+        int mx = x, min = x;
+        mx = Math.max(mx, y);
+        mx = Math.max(mx, z);
+
+        min = Math.min(min, y);
+        min = Math.min(min, z);
+
+        // display output
+        System.out.println("Biggest: " + mx);
+        System.out.println("Smallest: " + min);
+    }
+}
