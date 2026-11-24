@@ -1,12 +1,12 @@
 class Solution {
     public int[] getConcatenation(int[] nums) {
-        int len = nums.length;
-        int[] ans = new int[2*len];
-        for(int i = 0; i < len; i++){
-            ans[i] = nums[i];
-            ans[i+len] = nums[i];
+        int n = nums.length;
+        int[] num2 = new int[2*n];
+        for(int i = 0; i < n; i++){
+            num2[i] = nums[i];
+            num2[n + i]= nums[i];
         }
-        return ans;
+        return num2;
     }
 }
 
